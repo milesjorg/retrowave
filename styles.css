@@ -10,12 +10,40 @@ body {
     background-attachment: fixed;
 }
 
+button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    border: transparent;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+button:hover .fs-icon{
+    color: black;
+    visibility: visible;
+}
+
+.fs-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
 .sky {
     height: 50%;
     width: 100%;
     position: absolute;
     overflow: hidden;
-    z-index: 1;
     background: linear-gradient(black 70%, #6414e4);
 }
 
